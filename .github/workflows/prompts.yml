@@ -18,6 +18,10 @@ on:
         description: 'Times a failure must recur before a rule is proposed'
         type: string
         default: '3'
+      synthesize:
+        description: 'Also draft rules for unanticipated failures (needs ANTHROPIC_API_KEY)'
+        type: boolean
+        default: false
 
 permissions:
   contents: read
